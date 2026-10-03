@@ -1,333 +1,655 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Edureka Intership Assigment 2">
-        <meta name="keywords" content="HTML, CSS, Bootstrap">
-        <meta name="author" content="Dexter Ohaeri">
-        <meta http-equiv="refresh" content="30">
-
-        <title>Netflix Miniproject</title>
-
-        <link rel="icon" type="image/png" href="./images/Netflix-new-icon.png">
-
-        <link rel="stylesheet" type="text/css" href="style.css" />
-       
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-        <style>
-           
-           .custom-select-transparent{
-               background-color: transparent;
-               border: 1px solid rgb(89, 87, 87);
-               outline:1px, whitesmoke;
-               border-radius: 6px;
-               color: #807e7e;
-            }
-
-        </style>
-
-    </head>
-
-
-    <body>
-
-        <div class="main-container">
-
-            <div class="header">
-
-                <div class="navbar-sect">
-
-                    <a href="#"><img src="./images/netflix-transparent.png"></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexter Ohaeri — Story Architect</title>
+    <!-- Google Fonts: Cormorant Garamond for Serifs/Monogram, Inter for clean modern UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-                    <ul class="navbar-sect-menu">
-
-                        <li> 
-        
-                            <select id="select1" class="form-select custom-select-transparent">
-
-                                <option> English </option>
-                                <option> Espanol </option>
-
-                            </select>
-
-                        </li>
-
-                        <li> <a href="#" id="btn-signin">Sign in </a></li>
-                        
-                    </ul>
-    
-                </div>
-    
-                <div class="hero-section">
-    
-                    <div class="hero-text">
-                        <h1>Unlimited movies, TV shows, and more</h1>
-                        <p>Watch anywhere. Cancel anytime.</p>
-                        
-                        <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
-
-                        <div class="hero-signup">
-
-                         
-                            <input type="text" name="email" placeholder="Email Address">
-                            <button type="submit"> Get Started &#10095;</button>
-                        
-        
-                        </div>
-
-                    </div>
-    
-                </div>
-
-            </div>
-
-            <div class="popcorn-sect">
-                
-                <div class="popcorn-icon">
-                    <img src="./images/popcorn.png">
-                </div>
-
-                <div class="popcorn-text">
-                    <h2>The Netflix you love for just $6.99. </h2>
-                    <p> Get the Standard with ads plan. </p>
-                    <p style="color: #ffffff; font-size: 18px;"> <a href="#" style="padding-right: 20px;"> Learn more </a><span style="color: #7373e7;"> &#10095; </span></p>
-                </div>
-
-            </div>
-
-            <div class="EnjoyTV-sect">
-                
-                <div class="EnjoyTV-text">
-                    <h1>Enjoy on your TV </h1>
-                    <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
-                </div>
-
-                <div class="EnjoyTV-image">
-                    <img src="./images/movie-collage.gif">
-                </div>
-
-            </div>
-
-            <div class="EnjoyTV-sect">
-
-                <div class="EnjoyTV-image">
-                    <img src="./images/stranger-thing.gif">
-                </div>
-                
-                <div class="EnjoyTV-text">
-                    <h1>Watch everywhere</h1>
-                    <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
-                </div>
-
-            </div>
-
-            <div class="EnjoyTV-sect">
-
-                <div class="EnjoyTV-text">
-                    <h1>Create profiles for kids</h1>
-                    <h2>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h2>
-                </div>
-
-                <div class="EnjoyTV-image">
-                    <img src="./images/kids.png">
-                </div>
-
-            </div>
-
-            <div class="Download-sect">
-
-                <div class="Download-image">
-                    <img src="./images/mobile-0819.jpg">
-
-                    <div class="download-mobile">
-                        <img src="./images/boxshot.png">
-                        <p>Stranger <br> Things <br><span> Downloading...</span></p>
-                        <img id="dwnphone" src="./images/download-phonee.gif">
-                    </div>
-                </div>
-                
-                <div class="EnjoyTV-text">
-                    <h1>Download your shows to watch offline</h1>
-                    <h2>Watch on a plane, train, or submarine.</h2>
-                </div>
-
-            </div>
-
-            <div class="FAQ-sect">
-
-                <div class="EnjoyTV-text">
-                    <h1>Frequently Asked Questions</h1>
-                </div>
-                
-                <button class="accordion">What is NetFlix</button>
-                <div class="panel">
-                  <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br>You can watch as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
-                </div>
-                
-                <button class="accordion">How much does Netflix cost</button>
-                <div class="panel">
-                  <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $6.99 to $22.99 a month. No extra costs, no contracts..</p>
-                </div>
-                
-                <button class="accordion">Where can I watch</button>
-                <div class="panel">
-                  <p> Watch anywhere, anytime. Sign in with your Netflix account to     watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br> You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
-                </div>
-
-                <button class="accordion">How do I cancel</button>
-                <div class="panel">
-                  <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-                </div>
-
-                <button class="accordion">What can I watch on NetFlix</button>
-                <div class="panel">
-                  <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
-                </div>
-
-                <button class="accordion">What can I watch on NetFlix</button>
-                <div class="panel">
-                  <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br> Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
-                </div>
-
-                
-                <div class="hero-text" style="padding:0; height: 30vh;">
-
-                    
-                    <h2 style="color: white;">Ready to watch? Enter your email to create or restart your membership.</h2>
-
-                    <div class="hero-signup">
-
-                     
-                        <input type="text" name="email" placeholder="Email Address">
-                        <button type="submit"> Get Started &#10095;</button>
-                    
-    
-                    </div>
-
-                </div>
-
-
-            </div> <!-- FAQ/Accordion ends here  -->
-
-
-            <div class="Footer-sect">
-
-                <p style="margin-bottom: 0;">Questions? Call <a href="#">1-844-505-2993</a> </p>
-                
-                <div class="Footer-item">
-
-                    <ul>
-                        <a href="#">
-                            <li>FAQ</li>
-                            <li>Investor Relations</li>
-                            <li>Buy Gift Cards</li>
-                            <li>Cookie Preferences</li>
-                            <li>Legal Notices</li> 
-                        </a>
-                    </ul>
-
-                    <ul>
-                        <a href="#">
-                            <li>Help Center</li>
-                            <li>Jobs</li>
-                            <li>Ways to Watch</li>
-                            <li>Corporate Information</li>
-                            <li>Only on Netflix</li>
-                        </a>
-                    </ul>
-
-                    <ul>
-                        <a href="#">
-                            <li>Account</li>
-                            <li>Netflix Shop</li>
-                            <li>Terms of Use</li>
-                            <li>Contact Us</li>
-                            <li>Do Not Sell or Share My Personal Information</li>
-                        </a>
-                    </ul>
-
-                    <ul>
-                        <a href="#">
-                            <li> Media Center</li>
-                            <li>Redeem Gift Cards</li>
-                            <li>Privacy</li>
-                            <li>Speed Test</li>
-                            <li>Ad Choices</li>
-                        </a>
-                    </ul>
-
-                </div>
-
-                <ul class="navbar-sect-menu" style="justify-content: flex-start; padding-left: 0; padding-top:20px;">
-
-                    <li> 
-    
-                        <select id="select1" class="form-select custom-select-transparent">
-
-                            <option> English </option>
-                            <option> Espanol </option>
-
-                        </select>
-
-                    </li>
-
-                    
-                </ul>
-
-            </div>
-                
-                
-
+    <style>
+        /* --- CSS VARIABLES & THEME SETUP --- */
+        :root {
+            --bg-warm-white: #F8F7F4;
+            --text-charcoal: #1D1D1F;
+            --text-muted: #6E6E73;
+            --accent-copper: #B28B67;
+            --border-gray: #E5E2DC;
+            --divider-line: #D8D4CF;
             
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             
+            --max-width: 1100px;
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
+        /* --- HIGHLIGHT / SELECTION COLOR --- */
+        ::selection {
+            background-color: var(--accent-copper);
+            color: var(--bg-warm-white);
+        }
+
+        /* --- RESET & BASE STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-warm-white);
+            color: var(--text-charcoal);
+            font-family: var(--font-body);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            line-height: 1.7;
+            font-weight: 300;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            color: var(--text-charcoal);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 7rem 0;
+            position: relative;
+        }
+
+        .thin-hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-gray);
+            margin: 0 auto;
+            max-width: var(--max-width);
+            width: calc(100% - 4rem);
+        }
+
+        .copper-divider {
+            width: 32px;
+            height: 2px;
+            background-color: var(--accent-copper);
+            margin: 2rem 0;
+        }
+
+        .copper-divider.center {
+            margin: 2rem auto;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            padding: 2.5rem 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .nav-btn {
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-charcoal);
+            border-bottom: 1px solid var(--accent-copper);
+            padding-bottom: 2px;
+        }
+
+        .nav-btn:hover {
+            color: var(--accent-copper);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 8rem;
+        }
+
+        /* Custom Monogram matching card design */
+        .monogram {
+            font-family: var(--font-heading);
+            font-size: 5rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            user-select: none;
+        }
+
+        .monogram .j {
+            color: var(--text-charcoal);
+            margin-right: -0.10em;
+        }
+
+        .monogram .d {
+            color: var(--accent-copper);
+            margin-left: -0.35em;
+            font-style: italic;
+        }
+
+        .hero h1 {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.25em;
+            color: var(--accent-copper);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .hero-statement {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            line-height: 1.3;
+            max-width: 750px;
+            margin: 2.5rem auto 1.5rem;
+            color: var(--text-charcoal);
+        }
+
+        .hero-description {
+            max-width: 620px;
+            margin: 0 auto 3rem;
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border: 1px solid var(--text-charcoal);
+            color: var(--text-charcoal);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            background: transparent;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--text-charcoal);
+            color: var(--bg-warm-white);
+        }
+
+        /* --- MANIFESTO / OVERVIEW --- */
+        .manifesto {
+            text-align: center;
+        }
+
+        .section-tag {
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent-copper);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .manifesto h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .manifesto-body {
+            max-width: 780px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .manifesto-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 3.5rem;
+            border-radius: 2px;
+        }
+
+        /* --- WHAT I DO (SERVICES) --- */
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.75rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3.5rem 2.5rem;
+        }
+
+        .service-card {
+            border-top: 1px solid var(--border-gray);
+            padding-top: 1.75rem;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            border-top-color: var(--accent-copper);
+        }
+
+        .service-num {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-copper);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            line-height: 1.7;
+        }
+
+        /* --- SELECTED EXPERTISE --- */
+        .expertise-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .expertise-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem 2rem;
+            list-style: none;
+        }
+
+        .expertise-list li {
+            font-size: 1rem;
+            color: var(--text-charcoal);
+            padding-bottom: 0.75rem;
+            border-bottom: 1px dashed var(--border-gray);
+            display: flex;
+            align-items: center;
+        }
+
+        .expertise-list li::before {
+            content: "—";
+            color: var(--accent-copper);
+            margin-right: 0.75rem;
+            font-size: 0.8rem;
+        }
+
+        /* --- PHILOSOPHY (QUOTE) --- */
+        .philosophy {
+            background-color: #F2F0EC;
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        blockquote {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            line-height: 1.4;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-charcoal);
+            font-style: italic;
+        }
+
+        .philosophy-sub {
+            max-width: 650px;
+            margin: 2.5rem auto 0;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            font-family: var(--font-body);
+            font-style: normal;
+        }
+
+        /* --- CALL TO ACTION & CONTACT --- */
+        .contact {
+            padding: 8rem 0;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+        }
+
+        .contact-left h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-left p {
+            font-size: 1.1rem;
+            max-width: 500px;
+        }
+
+        .contact-details {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-copper);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-value {
+            font-size: 1.1rem;
+            color: var(--text-charcoal);
+        }
+
+        .contact-value a:hover {
+            color: var(--accent-copper);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-gray);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-tagline {
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        /* --- FADE-IN ANIMATIONS --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 850px) {
+            section { padding: 4.5rem 0; }
+            .hero-statement { font-size: 1.75rem; }
+            .manifesto h2, .section-header h2, .contact-left h2 { font-size: 2.25rem; }
+            .expertise-container { grid-template-columns: 1fr; }
+            .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+            blockquote { font-size: 1.75rem; }
+        }
+
+        @media (max-width: 550px) {
+            .expertise-list { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-inner">
+            <div class="nav-logo">DEXTER OHAERI</div>
+            <a href="#contact" class="nav-btn">Let's Talk</a>
         </div>
+    </nav>
 
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                panel.style.display = "none";
-                } else {
-                panel.style.display = "block";
-                }
-            });
-            }
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container fade-in">
+            <!-- Monogram styled directly after business card -->
+            <div class="monogram">
+                <span class="j">D</span><span class="d">O</span>
+            </div>
+            <h1>Dexter Ohaeri</h1>
+            <div class="hero-title">Story Architect</div>
+            <div class="copper-divider center"></div>
             
-        </script>
-
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+            <p class="hero-statement">Structuring narratives that move people. Engineering stories that define brands.</p>
+            <p class="hero-description">I help organizations, founders, and visionaries craft compelling story worlds, structure narrative strategies, and turn ideas into unforgettable human experiences.</p>
             
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                }
+            <a href="#contact" class="btn-primary">LET'S DO IT</a>
+        </div>
+    </section>
+
+    <hr class="thin-hr">
+
+    <!-- MANIFESTO SECTION (Perspective) -->
+    <section class="manifesto">
+        <div class="container fade-in">
+            <span class="section-tag">Perspective</span>
+            <h2 style="white-space: pre-line;">Stories are Built, Not Just Told</h2>
+            <div class="copper-divider center"></div>
+            <p class="manifesto-body">
+                The most powerful stories aren't created by accident. They are deliberately engineered with structure, emotional tension, and clear human purpose. As a Story Architect, I combine narrative strategy, creative direction, and audience psychology to build storytelling frameworks that resonate deeply and drive meaningful action.
+            </p>
+            <img src="profile-image.jfif" alt="Story Architect Workspace" class="manifesto-img">
+        </div>
+    </section>
+
+    <hr class="thin-hr">
+
+    <!-- WHAT I DO (Capabilities) -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Capabilities</span>
+                <h2>What I Do</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <span class="service-num">01</span>
+                    <h3>Narrative Strategy</h3>
+                    <p>Develop core brand messaging frameworks, origin stories, and positioning narratives that deeply connect with your audience.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <span class="service-num">02</span>
+                    <h3>Campaign Storytelling</h3>
+                    <p>Architect multi-channel narrative arcs that hook attention, spark conversation, and inspire meaningful engagement.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <span class="service-num">03</span>
+                    <h3>World-Building & Concepts</h3>
+                    <p>Shape immersive brand universes, thematic concepts, and creative direction that bring ideas to life.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <span class="service-num">04</span>
+                    <h3>Script & Content Design</h3>
+                    <p>Craft compelling scripts for films, keynotes, videos, and digital touchpoints engineered for maximum audience impact.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <span class="service-num">05</span>
+                    <h3>Strategic Positioning</h3>
+                    <p>Frame complex technical or abstract concepts into clear, captivating stories that stakeholders and customers understand.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-num">06</span>
+                    <h3>Digital Narrative Experience</h3>
+                    <p>Structure digital platforms and web experiences that guide users through an intuitive and engaging narrative journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="thin-hr">
+
+
+   <!-- SELECTED EXPERTISE / PRODUCTS CREATED -->
+    <section>
+        <div class="container">
+            <div class="expertise-container">
+                <div class="fade-in">
+                    <span class="section-tag">Output</span>
+                    <h2>Products & Creations</h2>
+                    <div class="copper-divider"></div>
+                </div>
+                
+                <ul class="expertise-list fade-in">
+                    <li>TV Shows & Podcasts</li>
+                    <li>Documentaries</li>
+                    <li>Short Films</li>
+                    <li>Broadcast Production</li>
+                    <li>Digital Experiences</li>
+                    <li>Brand Identities</li>
+                    <li>Web Design</li>
+                    <li>Campaign Videos</li>
+                    <li>eLearning Content</li>
+                    <li>Visual & Graphic Designs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY / QUOTE -->
+    <section class="philosophy">
+        <div class="container fade-in">
+            <span class="section-tag">Core Belief</span>
+            <blockquote>
+                “People do not buy products or ideas. They buy the story that makes them feel understood.”
+            </blockquote>
+            <p class="philosophy-sub">
+                Every line of copy creates a perspective. Every campaign constructs a belief. Every unforgettable brand begins with an engineered narrative.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT / CALL TO ACTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-left fade-in">
+                    <span class="section-tag">Start a Conversation</span>
+                    <h2>Let's Architect Your Story</h2>
+                    <p>Whether you are shaping a brand narrative, launching a strategic campaign, writing a script, or building an engaging project, let's craft a story people won't forget.</p>
+                </div>
+                
+                <div class="contact-right fade-in">
+                    <ul class="contact-details">
+                        <li class="contact-item">
+                            <span class="contact-label">Direct Email</span>
+                            <span class="contact-value"><a href="mailto:powerproject360@gmail.com">powerproject360@gmail.com</a></span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value"><a href="https://linkedin.com/in/janedoe" target="_blank">linkedin.com/in/janedoe</a></span>
+                        </li>
+                        <li class="contact-item">
+                           <span class="contact-label">Phone</span>
+                           <span class="contact-value"><a href="tel:+17657493976">+1 765 749 3976</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div>&copy; Dexter Ohaeri. All rights reserved.</div>
+            <div class="footer-tagline">NARRATIVE &bull; STRUCTURE &bull; IMPACT</div>
+        </div>
+    </footer>
+
+    <!-- INTERACTION & FADE-IN SCRIPT -->
+    <script>
+        // Simple Intersection Observer for subtle scroll fade-ins
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
             });
-            }
-        </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
-    </body>
-
+            document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
 </html>
